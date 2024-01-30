@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Cambria', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  h1 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .todoInputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .todoInputContainer label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .todoInputContainer input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .todoInputContainer button {
+    padding: 12px;
+    background-color: #15ac6d;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .todoInputContainer button:hover {
+    background-color: #2ea552;
+  }
+  
+  .todoContainer {
+    width: 100%;
+    max-width: 800px; 
+  }
+
+  .scrollable {
+    overflow-y: auto;
+    resize: none; 
+  }
+  
+  .todoListContainer {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  li {
+    white-space: normal; 
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .list_Header,
+  li {
+    display: grid;
+    grid-template-columns: 50px auto 100px;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .list_Header {
+    font-size: 18px;
+    background-color: #34495e;
+    color: #fff;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  ul li:nth-child(2n) {
+    background-color: #ecf0f1;
+  }
+  
+  .taskDone {
+    text-decoration: line-through;
+    color: #7f8c8d;
+  }
+  
+  
+  .progress {
+    text-align: center;
+    margin-left: 30px;
+  }
+  
+  .task_list{
+    margin-left: 70px;
+  }
+  .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .actions button {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .actions button:hover {
+    background-color: #c0392b;
+  }
+  
